@@ -1,5 +1,5 @@
-import type { Localize, LocalizeFn } from "../../../types.js";
 import { buildLocalizeFn } from "../../../_lib/buildLocalizeFn/index.js";
+import type { Localize, LocalizeFn } from "../../../types.js";
 
 const eraValues = {
   narrow: ["v.Chr.", "n.Chr."] as const,
@@ -87,8 +87,8 @@ const dayValues = {
 // https://www.unicode.org/cldr/charts/32/summary/de.html#1881
 const dayPeriodValues = {
   narrow: {
-    am: "vm.",
-    pm: "nm.",
+    am: "a",
+    pm: "p",
     midnight: "Mitternacht",
     noon: "Mittag",
     morning: "Morgen",
@@ -97,8 +97,8 @@ const dayPeriodValues = {
     night: "Nacht",
   },
   abbreviated: {
-    am: "vorm.",
-    pm: "nachm.",
+    am: "AM",
+    pm: "PM",
     midnight: "Mitternacht",
     noon: "Mittag",
     morning: "Morgen",
@@ -107,8 +107,8 @@ const dayPeriodValues = {
     night: "Nacht",
   },
   wide: {
-    am: "vormittags",
-    pm: "nachmittags",
+    am: "a.m.",
+    pm: "p.m.",
     midnight: "Mitternacht",
     noon: "Mittag",
     morning: "Morgen",
@@ -119,8 +119,8 @@ const dayPeriodValues = {
 };
 const formattingDayPeriodValues = {
   narrow: {
-    am: "vm.",
-    pm: "nm.",
+    am: "a",
+    pm: "p",
     midnight: "Mitternacht",
     noon: "Mittag",
     morning: "morgens",
@@ -129,8 +129,8 @@ const formattingDayPeriodValues = {
     night: "nachts",
   },
   abbreviated: {
-    am: "vorm.",
-    pm: "nachm.",
+    am: "AM",
+    pm: "PM",
     midnight: "Mitternacht",
     noon: "Mittag",
     morning: "morgens",
@@ -139,8 +139,8 @@ const formattingDayPeriodValues = {
     night: "nachts",
   },
   wide: {
-    am: "vormittags",
-    pm: "nachmittags",
+    am: "a.m.",
+    pm: "p.m.",
     midnight: "Mitternacht",
     noon: "Mittag",
     morning: "morgens",
